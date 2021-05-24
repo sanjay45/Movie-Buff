@@ -2,10 +2,8 @@ package com.sanjay.moviebuff.ui
 
 import android.os.Bundle
 import android.util.Log
+import android.view.*
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import androidx.core.view.isVisible
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.FragmentNavigatorExtras
@@ -33,6 +31,7 @@ class MovieListFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
             _binding = FragmentMovieListBinding.inflate(inflater,container,false)
+       setHasOptionsMenu(true)
         return binding.root
     }
 
@@ -101,6 +100,22 @@ class MovieListFragment : Fragment() {
         binding.recyclerview.apply {
             adapter = movieAdapter
         }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        super.onCreateOptionsMenu(menu, inflater)
+        inflater.inflate(R.menu.options_memu,menu)
+    }
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            R.id.refresh -> {
+                movieViewModel.deleteAllMovies()
+                movieViewModel.fetchFromNetwork()
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
+
     }
 
     override fun onResume() {
