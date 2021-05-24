@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MovieDetailsFragment">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/movie_backdrop"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/movie_backdrop"
+        android:scaleType="centerCrop"
+        android:transitionName="image_big"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/backgrounds/scenic" />
+
+    <ImageView
+        android:id="@+id/movie_poster"
+        android:layout_width="100dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="250dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/movie_poster"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/movie_backdrop"
+        tools:src="@tools:sample/backgrounds/scenic" />
+
+    <TextView
+        android:id="@+id/movie_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/movie_poster"
+        app:layout_constraintTop_toBottomOf="@+id/movie_backdrop"
+        tools:text="The Shawshank Redemption"/>
+
+    <TextView
+        android:id="@+id/synopsis_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/synopsis"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/movie_poster" />
+
+    <TextView
+        android:id="@+id/movie_synopsis"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:scrollbars="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/synopsis_title"
+        tools:text="Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency." />
+
+    <TextView
+        android:id="@+id/release_date_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/release_date"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/movie_title"
+        app:layout_constraintStart_toEndOf="@+id/rating_title"
+        app:layout_constraintTop_toBottomOf="@+id/movie_title" />
+    <TextView
+        android:id="@+id/release_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/release_date_title"
+        app:layout_constraintTop_toBottomOf="@+id/release_date_title"
+        tools:text="14 October 1994" />
+
+    <TextView
+        android:id="@+id/rating_title"
+        android:layout_width="57dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/rating"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/movie_title"
+        app:layout_constraintTop_toBottomOf="@+id/movie_title" />
+
+
+    <TextView
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/rating_title"
+        app:layout_constraintTop_toBottomOf="@+id/rating_title"
+        tools:text="7.8/10" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
