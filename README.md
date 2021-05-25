@@ -20,7 +20,7 @@ https://drive.google.com/file/d/1FeEuizCGMtt98jh5N0KOBBs1inykPutk/view?usp=shari
 - Glide (For displaying images)
 - Moshi (To convert json into kotlin objects)
 - Architecture
-    - MVVM (Used in Presentation Layer)
+    - Model–view–viewmodel (MVVM)
 
   
 # Screenshots
