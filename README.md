@@ -9,8 +9,8 @@ https://drive.google.com/file/d/1FeEuizCGMtt98jh5N0KOBBs1inykPutk/view?usp=shari
 # Screenshots
 
 <div class="row">
-      <img src="https://raw.githubusercontent.com/sanjay45/Movie-Buff/main/screenshots/movie_details.jpg" width="250">
-      <img src="https://raw.githubusercontent.com/sanjay45/Movie-Buff/main/screenshots/refresh_data.jpg" width="250">
+      <img src="https://raw.githubusercontent.com/sanjay45/Movie-Buff/main/screenshots/movies_list.jpg" width="250">
+      <img src="https://raw.githubusercontent.com/sanjay45/Movie-Buff/main/screenshots/shimmer_effect.jpg" width="250">
       
 </div>
 <br>
