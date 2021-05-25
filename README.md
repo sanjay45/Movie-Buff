@@ -8,13 +8,15 @@ https://drive.google.com/file/d/1FeEuizCGMtt98jh5N0KOBBs1inykPutk/view?usp=shari
 ## Tech-Stack
 
 - Kotlin
-- Dagger 2 (For Dependency Injection)
+- Dagger-Hilt (For Dependency Injection)
 - Coroutines (For Managing Background Tasks)
 - Retrofit (For Networking)
+- Room (For offline caching)
 - JetPack
     - ViewModel (For managing UI related data in a lifecycle conscious way)
     - LiveData (For notifying views of data changes)
-- Picasso (For displaying images)
+- Glide (For displaying images)
+- Moshi (To convert json into kotlin objects)
 - Architecture
     - MVVM (Used in Presentation Layer)
 
