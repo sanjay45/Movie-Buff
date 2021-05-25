@@ -5,6 +5,19 @@ This app have created using kotlin language, MVVM architecture, Retrofit library
 # APK LINK
 https://drive.google.com/file/d/1FeEuizCGMtt98jh5N0KOBBs1inykPutk/view?usp=sharing
 
+## Tech-Stack
+
+- Kotlin
+- Dagger 2 (For Dependency Injection)
+- Coroutines (For Managing Background Tasks)
+- Retrofit (For Networking)
+- JetPack
+    - ViewModel (For managing UI related data in a lifecycle conscious way)
+    - LiveData (For notifying views of data changes)
+- Picasso (For displaying images)
+- Architecture
+    - MVVM (Used in Presentation Layer)
+
 
 # Screenshots
 
