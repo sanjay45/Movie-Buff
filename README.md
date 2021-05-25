@@ -15,6 +15,7 @@ https://drive.google.com/file/d/1FeEuizCGMtt98jh5N0KOBBs1inykPutk/view?usp=shari
 - JetPack
     - ViewModel (For managing UI related data in a lifecycle conscious way)
     - LiveData (For notifying views of data changes)
+- DiffUtil RecyclerView ( For displaying list of movies)
 - Glide (For displaying images)
 - Moshi (To convert json into kotlin objects)
 - Architecture
