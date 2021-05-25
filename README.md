@@ -1,6 +1,6 @@
 # Movie-Buff
-An android app which displays news list and also user can open particular news in a webview.
-This app have created using kotlin language, MVVM architecture, Retrofit library to fetch data from news api, Navigation components to navigate, Moshi converter to parse json data into kotlin objects, Glide library to load images and kotlin coroutines to perform asynchronous operation.
+An android app which displays  list  of movies and also show the details of a movie.
+This app have created using kotlin language, MVVM architecture, Retrofit library to fetch data from TheMovieDB api, Navigation components to navigate, Moshi converter to parse json data into kotlin objects, Glide library to load images and kotlin coroutines to perform asynchronous operation.
 
 # APK LINK
 https://drive.google.com/file/d/1FeEuizCGMtt98jh5N0KOBBs1inykPutk/view?usp=sharing
@@ -12,6 +12,7 @@ https://drive.google.com/file/d/1FeEuizCGMtt98jh5N0KOBBs1inykPutk/view?usp=shari
 - Coroutines (For Managing Background Tasks)
 - Retrofit (For Networking)
 - Room (For offline caching)
+- Navigation Component (For navigation inside the app)
 - JetPack
     - ViewModel (For managing UI related data in a lifecycle conscious way)
     - LiveData (For notifying views of data changes)
@@ -21,7 +22,7 @@ https://drive.google.com/file/d/1FeEuizCGMtt98jh5N0KOBBs1inykPutk/view?usp=shari
 - Architecture
     - MVVM (Used in Presentation Layer)
 
-
+  
 # Screenshots
 
 <div class="row">
